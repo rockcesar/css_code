@@ -1,4 +1,4 @@
-                    <style>
+<style>
                         .goog-te-banner-frame.skiptranslate {
                             display: none !important;
                         }
@@ -25,17 +25,12 @@
                         
                         .goog-logo-link{display: none !important;}
                         .goog-te-gadget{height: 28px !important;  overflow: hidden;}
-                    </style>
+</style>
 
-                    <script type="text/javascript">
+<script type="text/javascript">
                         function googleTranslateElementInit() {
-                          if(location.pathname.substring(0, 4) != "/web")
-                          {
                               var lang_google='en';
-                              if(location.pathname.substring(0, 3) == "/es")
-                              {
-                                  lang_google='es';
-                              }
+                              
                               new google.translate.TranslateElement({pageLanguage: lang_google,
                                                                     autoDisplay: true,
                                                                     layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 
@@ -65,16 +60,9 @@
                                 observer.observe(el2);
                                 observer.observe(el3);
                                 observer.observe(el4);
-                          }
+                          
                         }
-                    
-                        document.addEventListener("DOMContentLoaded", function(event) {
-                            if(location.pathname.substring(0, 4) == "/web")
-                            {
-                                document.getElementById("translate_text_latinchain").style.display = "none";
-                            }
-                        });
-                    </script>
+</script>
 
-                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                    <div id="google_translate_element"></div>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<div id="google_translate_element"></div>
